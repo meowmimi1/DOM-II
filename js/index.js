@@ -1,10 +1,6 @@
 // Your code goes here
-// let nav = document.querySelectorAll(".nav-link");
-// nav[0].addEventListener("mouseover", (event) => {
-//     event.target.style.backgroundColor = "pink";
-// });
 
-let nav = document.querySelectorAll("nav");
+let nav = document.querySelectorAll("nav a");
 nav[0].addEventListener("mouseover", (event) => {
   event.target.style.backgroundColor = "purple";
 });
@@ -35,8 +31,49 @@ intro.addEventListener("copy", (event) => {
   alert("Intro is copied");
 });
 
+let letsGo = document.querySelector(".img-content img");
+letsGo.addEventListener("dblclick", (event) => {
+  event.preventDefault();
+  alert("WOOOOOOOOOOOO!!!");
+});
+
+let destination = document.querySelectorAll(".destination h4");
+destination[0].addEventListener("mousemove", (event) => {
+  event.target.style.color = "red";
+});
+destination[1].addEventListener("mousemove", (event) => {
+  event.target.style.color = "red";
+});
+destination[2].addEventListener("mousemove", (event) => {
+  event.target.style.color = "red";
+});
+
+let pickYour = document.querySelector(".content-destination h2");
+pickYour.addEventListener("drag", (event) => {
+  alert("Pick your destination is being dragged");
+});
+
+let paragraph = document.querySelector('p')
+paragraph.addEventListener('click', (event) => {
+    event.target.style.color = 'red';
+});
+
+let imgRemove = document.querySelector('.img-content img');
+
+  imgRemove.addEventListener('dblclick', event)
+
+  imgRemove.addEventListener('dblclick', event => {
+     imgRemove.style.display = 'none';
+ });
 
 const foot = document.querySelector('footer');
  foot.addEventListener('mouseover', function(event) {
     event.target.style.backgroundColor = 'yellow';
-})
+});
+
+
+const h2 = document.querySelectorAll('h2');
+h2[0].addEventListener('click', (event) => event.target.style.color = 'crimson');
+h2[0].addEventListener('click', (event) => event.stopPropagation());
+
+
