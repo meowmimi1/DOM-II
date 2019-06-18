@@ -76,4 +76,8 @@ const h2 = document.querySelectorAll('h2');
 h2[0].addEventListener('click', (event) => event.target.style.color = 'crimson');
 h2[0].addEventListener('click', (event) => event.stopPropagation());
 
+const keyDown = document.getElementsByClassName('.text-content');
 
+ document.addEventListener('keydown', function() {
+  console.log ('You pressed me.');
+});
