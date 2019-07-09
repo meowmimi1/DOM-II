@@ -83,3 +83,8 @@ const keyDown = document.getElementsByClassName('.text-content');
 });
 
 window.addEventListener('resize', function(){console.log('resize!')}, true);
+
+var dragged;
+
+/* events fired on the draggable target */
+document.addEventListener("drag", function(event) {console.log('Drag!')}, false);
